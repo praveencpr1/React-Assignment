@@ -1,0 +1,16 @@
+.cards {
+  display: grid;
+  @include grid(repeat(5, 1fr), 50px);
+  .card {
+    @include flex(center, center, center);
+
+    img {
+      width: 100%;
+      height: 100%;
+     margin-bottom: $md;
+    }
+  }
+}
+.right{
+  position: absolute;
+}
